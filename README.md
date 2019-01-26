@@ -16,7 +16,7 @@ http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods
 `$ conda create -n my-r-env -c r r-essentials`
   
 - you will probabli need this for git2r, and devtools  
-`$ sudo apt-get update && sudo apt-get install libssl-dev`  
+`$ sudo apt-get update && sudo apt-get install libssl-dev`
 
 - activate it  
 `$ conda activate my-r-env`  
@@ -28,6 +28,9 @@ http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods
 `> install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))`  
 `> devtools::install_github('IRkernel/IRkernel')`  
 `> q()`  
+  
+- if you still have problems installing git2r:
+`$ conda install -c r r-git2r`
   
 - now you can open up a jupyter notebook, and start a new notebook with R  
 `$ jupyter notebbok`  
